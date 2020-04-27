@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.block {
+    width: 320px;
+    background-color: #505050;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.block-header,
+.block-bottom {
+    font-weight: bold;
+    background-color: #3c3c3c;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-header {
+    border-bottom: 1px solid #000;
+}
+
+.header-check {
+    padding-left: 23px;
+}
+
+.block__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 15px;
+    border-bottom: 1px solid #000;
+}
+
+.item-news {
+    display: flex;
+    align-items: center;
+}
+
+.news-description {
+    padding-left: 10px;
+}
+
+.news-description p {
+    padding-bottom: 5px;
+}
+
+.news-description span {
+    color: #cddde4;
+    font-weight: 500;
+    line-height: 5px;
+}
+
+.block-bottom {
+    background-color: inherit;
+}
+
+.bottom-btn {
+    padding: 8px 18px;
+    background-color: #6db332;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.bottom-btn:hover {
+    background-color: #90eb45;
+}
+
+.header-check,
+.news-price {
+    position: relative;
+}
+
+.header-check::before,
+.news-price::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 17px;
+    background-repeat: no-repeat;
+}
+
+.header-check::before {
+    background-image: url(../images/check.png);
+}
+
+.news-price::before {
+    background-image: url(../images/tag.png);
+    left: -25px;
+}
