@@ -8,7 +8,7 @@ body {
     font-family: 'Helvetica', sans-serif;
     font-size: 14px;
     background-color: #fff;
-    background-image: url(../images/bg.png);
+    background-image: url('../images/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -21,7 +21,7 @@ ul {
     list-style: none;
 }
 
-.block {
+.cart {
     width: 320px;
     background-color: #505050;
     color: #fff;
@@ -30,8 +30,8 @@ ul {
     border-collapse: collapse;
 }
 
-.block-header,
-.block-bottom {
+.cart-header,
+.cart-footer {
     font-weight: bold;
     background-color: #3c3c3c;
     padding: 15px;
@@ -40,15 +40,15 @@ ul {
     align-items: center;
 }
 
-.block-header {
+.cart-header {
     border-bottom: 1px solid #000;
 }
 
-.header-check {
+.cart-header__title {
     padding-left: 23px;
 }
 
-.block__item {
+.product {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,51 +56,51 @@ ul {
     border-bottom: 1px solid #000;
 }
 
-.item-news {
+.product__left {
     display: flex;
     align-items: center;
 }
 
-.news-description {
+.product__content {
     padding-left: 10px;
 }
 
-.news-description p {
+.product__content p {
     padding-bottom: 5px;
 }
 
-.news-description span {
+.product__content span {
     color: #cddde4;
     font-weight: 500;
     line-height: 5px;
 }
 
-.block-bottom {
+.cart-footer {
     background-color: inherit;
 }
 
-.bottom-btn {
+.cart-footer__btn {
     padding: 8px 18px;
     background-color: #6db332;
     border: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 700;
     color: #fff;
     cursor: pointer;
-    transition: background .2s linear;
+    transition: background-color .2s linear;
 }
 
-.bottom-btn:hover {
+.cart-footer__btn:hover {
     background-color: #90eb45;
 }
 
-.header-check,
-.news-price {
+.cart-header__title,
+.product__price {
     position: relative;
 }
 
-.header-check::before,
-.news-price::before {
+.cart-header__title::before,
+.product__price::before {
     position: absolute;
     content: '';
     top: 0;
@@ -110,11 +110,11 @@ ul {
     background-repeat: no-repeat;
 }
 
-.header-check::before {
-    background-image: url(../images/check.png);
+.cart-header__title::before {
+    background-image: url('../images/check.png');
 }
 
-.news-price::before {
-    background-image: url(../images/tag.png);
+.product__price::before {
+    background-image: url('../images/tag.png');
     left: -25px;
 }

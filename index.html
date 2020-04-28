@@ -7,46 +7,46 @@
     <title>Shopping-cart</title>
 </head>
 <body>
-    <div class="block">
-        <div class="block-header">
-            <p class="header-check">Checkout</p>
-            <p class="header-items">3 items</p>
+    <div class="cart">
+        <div class="cart-header">
+            <p class="cart-header__title">Checkout</p>
+            <p class="cart-header__count">3 items</p>
         </div>
-        <ul class="block__list">
-            <li class="block__item">
-                <div class="item-news">
-                    <img src="./images/img-1.png" alt="img">
-                    <div class="news-description">
+        <ul class="products">
+            <li class="product">
+                <div class="product__left">
+                    <img class="product__image" src="./images/img-1.png" alt="img">
+                    <div class="product__content">
                         <p>Nas is like</p>
                         <span>Nas</span>
                     </div>
                 </div>
-                <p class="news-price">$12.99</p>
+                <p class="product__price">$12.99</p>
             </li>
-            <li class="block__item">
-                <div class="item-news"> 
-                    <img src="./images/img-2.png" alt="img">
-                    <div class="news-description">
+            <li class="product">
+                <div class="product__left"> 
+                    <img class="product__image" src="./images/img-2.png" alt="img">
+                    <div class="product__content">
                         <p>It’s all real</p>
                         <span>Pitch Black</span>
                     </div>
                 </div>
-                <p class="news-price">$10.00</p>
+                <p class="product__price">$10.00</p>
             </li>
-            <li class="block__item">
-                <div class="item-news">
-                    <img src="./images/img-3.png" alt="img">
-                    <div class="news-description">
+            <li class="product">
+                <div class="product__left">
+                    <img class="product__image" src="./images/img-3.png" alt="img">
+                    <div class="product__content">
                         <p>Moment of truth</p>
                         <span>Gang Starr</span>
                     </div>
                 </div>
-                <p class="news-price">$16.29</p>
+                <p class="product__price">$16.29</p>
             </li>
         </ul>
-        <div class="block-bottom">
-            <p>Total: $ 33.28</p>
-            <button class="bottom-btn" type="button">Continue</button>
+        <div class="cart-footer">
+            <p class="cart-footer__total">Total: $ 33.28</p>
+            <button class="cart-footer__btn" type="button">Continue</button>
         </div>
     </div>
 </body>
